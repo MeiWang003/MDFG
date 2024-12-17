@@ -35,7 +35,7 @@ Our experiments utilize the **reRLDD** and **reDROZY** datasets.
 
 3. **Confident Sample Selection**:
 
-   - Confident samples are identified using the `small_loss` method.
+   - Confident samples are identified in FGT.
      - Update the paths: `path="your_wavelet_feature_path"` and `save_path="your_confident_data_save_path"`.
      - Run the following command to extract confident samples:
        ```python
@@ -54,12 +54,7 @@ Our experiments utilize the **reRLDD** and **reDROZY** datasets.
    - This process generates quantified fatigue sequence features, which are stored in the `/fine_grained_feature` directory.
 ## Training & Testing
 To train and test the model, use the following commands:
-1. **Without Meta-Learning**:
    ```python
-   python ./MDFG_wometa.py --dataset reRLDD
-   ```
-2. **With Meta-Learning**:
-   ```python
-   python ./MDFG_meta.py --dataset reRLDD
+   python ./MDFG_meta.py 
    ```
 
